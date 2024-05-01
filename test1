@@ -1,0 +1,16 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# 生成 x 座標數值，從 0 到 2*pi，間隔為 0.1
+x = np.arange(0, 2*np.pi, 0.1)
+
+# 計算對應的 y 座標數值，使用 sin 函數
+y = np.sin(x)
+
+# 繪製正弦函數的圖形
+plt.plot(x, y)
+plt.title('Sine Function')
+plt.xlabel('x')
+plt.ylabel('sin(x)')
+plt.grid(True)
+plt.show()
